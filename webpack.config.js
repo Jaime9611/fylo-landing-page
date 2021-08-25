@@ -9,7 +9,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "js/script.js",
+    filename: "script.js",
     clean: true,
   },
   resolve: {
@@ -37,7 +37,7 @@ module.exports = {
       filename: "./index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "css/style.css",
+      filename: "style.css",
     }),
     new CopyPlugin({
       patterns: [
