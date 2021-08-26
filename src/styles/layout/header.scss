@@ -2,6 +2,10 @@
 @use '../utils/breakpoints' as b;
 
 .header {
+  height: f.rem(65);
+  @include b.breakpoint(large) {
+    height: f.rem(185);
+  }
   &__logo {
     background-image: url("../assets/images/logo.svg");
     width: f.rem(82.5);
