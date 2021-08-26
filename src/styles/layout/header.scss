@@ -4,7 +4,7 @@
 .header {
   height: f.rem(65);
   @include b.breakpoint(large) {
-    height: f.rem(185);
+    height: f.rem(190);
   }
   &__logo {
     background-image: url("../assets/images/logo.svg");
@@ -15,6 +15,21 @@
     @include b.breakpoint(large) {
       width: f.rem(178);
       height: f.rem(50);
+    }
+  }
+  & ul {
+    color: var(--light-white);
+  }
+  & ul li a:hover {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  & ul > li {
+    width: f.rem(70);
+    text-align: right;
+    @include b.breakpoint(large) {
+      width: f.rem(106);
     }
   }
 }
