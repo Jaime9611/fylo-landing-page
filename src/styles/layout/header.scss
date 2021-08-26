@@ -6,7 +6,7 @@
   @include b.breakpoint(xmedium) {
     height: f.rem(130);
   }
-  @include b.breakpoint(large) {
+  @include b.breakpoint(xlarge) {
     height: f.rem(190);
   }
   &__logo {
@@ -19,7 +19,7 @@
       width: f.rem(168);
       height: f.rem(40);
     }
-    @include b.breakpoint(large) {
+    @include b.breakpoint(xlarge) {
       width: f.rem(178);
       height: f.rem(50);
     }
