@@ -1,4 +1,5 @@
 @use '../utils/functions' as f;
+@use '../utils/breakpoints' as b;
 
 body {
   background-color: var(--dark-blue-main-bg);
@@ -6,5 +7,9 @@ body {
 }
 
 .container {
-  padding: 0 f.rem(20);
+  width: 89%;
+  margin: 0 auto;
+  @include b.breakpoint(large) {
+    max-width: f.rem(1280);
+  }
 }
