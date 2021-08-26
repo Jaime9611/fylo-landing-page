@@ -3,6 +3,9 @@
 
 .header {
   height: f.rem(65);
+  @include b.breakpoint(xmedium) {
+    height: f.rem(130);
+  }
   @include b.breakpoint(large) {
     height: f.rem(190);
   }
@@ -12,6 +15,10 @@
     height: f.rem(26.3);
     background-repeat: no-repeat;
     background-size: contain;
+    @include b.breakpoint(xmedium) {
+      width: f.rem(168);
+      height: f.rem(40);
+    }
     @include b.breakpoint(large) {
       width: f.rem(178);
       height: f.rem(50);
