@@ -1,0 +1,16 @@
+@use '../utils/functions' as f;
+@use '../utils/breakpoints' as b;
+
+.header {
+  &__logo {
+    background-image: url("../assets/images/logo.svg");
+    width: f.rem(82.5);
+    height: f.rem(26.3);
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include b.breakpoint(large) {
+      width: f.rem(178);
+      height: f.rem(50);
+    }
+  }
+}
