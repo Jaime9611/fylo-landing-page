@@ -1,4 +1,10 @@
+@use '../utils/functions' as f;
+
 body {
   background-color: var(--dark-blue-main-bg);
   color: var(--white);
+}
+
+.container {
+  padding: 0 f.rem(20);
 }
