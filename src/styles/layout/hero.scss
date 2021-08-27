@@ -1,29 +1,49 @@
 @use '../utils/functions' as f;
 @use '../utils/breakpoints' as b;
+@use '../utils/mixins' as m;
 
 .hero {
   text-align: center;
   &__img {
-    width: f.rem(295);
-    height: f.rem(248);
-    margin-top: f.rem(21);
+    width: f.rem(272);
+    height: f.rem(206);
+    margin-top: f.rem(22);
     background-image: url("../assets/images/illustration-intro.png");
     background-repeat: no-repeat;
     background-size: contain;
-    @include b.breakpoint(large) {
+    @include b.breakpoint(xmedium) {
+      margin-top: f.rem(70);
+      width: f.rem(620);
+      height: f.rem(424);
+    }
+    @include b.breakpoint(xlarge) {
+      margin-top: 0;
       width: f.rem(720);
-      height: f.rem(524);
+      height: f.rem(535);
     }
   }
   &__title {
-    margin-top: f.rem(24);
-    width: 302px;
+    margin-top: f.rem(34);
     font-family: var(--raleway);
     font-size: f.rem(23);
+    line-height: 1.1;
+    @include m.hero_content_mobile();
+    @include b.breakpoint(xlarge) {
+      margin-top: 47px;
+      width: f.rem(720);
+      font-size: f.rem(42);
+    }
   }
   &__text {
-    margin-top: f.rem(24);
+    margin-top: f.rem(20);
     margin-bottom: f.rem(30);
-    width: 302px;
+    color: var(--light-white);
+    @include m.hero_content_mobile();
+    @include b.breakpoint(xlarge) {
+      margin-top: 45px;
+      margin-bottom: 36px;
+      width: f.rem(585);
+      font-size: f.rem(20);
+    }
   }
 }

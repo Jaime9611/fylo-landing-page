@@ -3,11 +3,14 @@
 
 .header {
   height: f.rem(65);
+  font-family: var(--raleway);
+  font-size: f.rem(16);
+  color: var(--light-white);
   @include b.breakpoint(xmedium) {
     height: f.rem(130);
   }
   @include b.breakpoint(xlarge) {
-    height: f.rem(190);
+    height: f.rem(200);
   }
   &__logo {
     background-image: url("../assets/images/logo.svg");
@@ -26,10 +29,6 @@
       width: f.rem(178);
       height: f.rem(50);
     }
-  }
-  & ul {
-    font-family: var(--raleway);
-    color: var(--light-white);
   }
   & ul li a:hover {
     color: var(--white);
