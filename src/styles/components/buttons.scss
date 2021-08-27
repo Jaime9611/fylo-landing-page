@@ -1,0 +1,14 @@
+@use '../utils/functions' as f;
+
+.btn {
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--ca-gradient-blue);
+  border-radius: f.rem(30);
+  &:hover {
+    background-color: var(--ca-gradient-cyan);
+  }
+  &--large {
+    padding: f.rem(17) f.rem(75);
+  }
+}
