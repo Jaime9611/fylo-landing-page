@@ -1,4 +1,5 @@
 @use '../utils/functions' as f;
+@use '../utils/breakpoints' as b;
 
 .hero {
   text-align: center;
@@ -9,6 +10,10 @@
     background-image: url("../assets/images/illustration-intro.png");
     background-repeat: no-repeat;
     background-size: contain;
+    @include b.breakpoint(large) {
+      width: f.rem(720);
+      height: f.rem(524);
+    }
   }
   &__title {
     margin-top: f.rem(24);
