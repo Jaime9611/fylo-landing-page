@@ -5,16 +5,20 @@
   &__img {
     width: f.rem(295);
     height: f.rem(248);
+    margin-top: f.rem(21);
     background-image: url("../assets/images/illustration-intro.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
   &__title {
+    margin-top: f.rem(24);
     width: 302px;
     font-family: var(--raleway);
     font-size: f.rem(23);
   }
   &__text {
+    margin-top: f.rem(24);
+    margin-bottom: f.rem(30);
     width: 302px;
   }
 }
