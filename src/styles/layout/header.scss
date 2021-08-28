@@ -2,9 +2,8 @@
 @use '../utils/breakpoints' as b;
 
 .header {
-  height: f.rem(65);
+  height: f.rem(67);
   font-family: var(--raleway);
-  font-size: f.rem(16);
   color: var(--light-white);
   @include b.breakpoint(xmedium) {
     height: f.rem(130);
@@ -32,7 +31,7 @@
   }
   & ul li a:hover {
     color: var(--white);
-    font-weight: 700;
+    // font-weight: 700;
     text-decoration: underline;
   }
   & ul > li {

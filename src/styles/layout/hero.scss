@@ -5,8 +5,9 @@
 .hero {
   text-align: center;
   &__img {
-    width: f.rem(272);
-    height: f.rem(206);
+    margin-top: f.rem(20);
+    width: f.rem(320);
+    height: f.rem(252);
     margin-top: f.rem(22);
     background-image: url("../assets/images/illustration-intro.png");
     background-repeat: no-repeat;
@@ -23,10 +24,10 @@
     }
   }
   &__title {
-    margin-top: f.rem(34);
+    margin-top: f.rem(15);
     font-family: var(--raleway);
-    font-size: f.rem(23);
-    line-height: 1.1;
+    font-size: f.rem(21);
+    line-height: 1.4;
     @include m.hero_content_mobile();
     @include b.breakpoint(xlarge) {
       margin-top: 47px;
@@ -37,7 +38,7 @@
   &__text {
     margin-top: f.rem(20);
     margin-bottom: f.rem(30);
-    color: var(--light-white);
+    color: var(--white);
     @include m.hero_content_mobile();
     @include b.breakpoint(xlarge) {
       margin-top: 45px;
