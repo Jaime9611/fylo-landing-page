@@ -2,5 +2,5 @@
 @use './breakpoints' as b;
 
 @mixin hero_content_mobile() {
-  width: f.rem(320);
+  width: 302px;
 }

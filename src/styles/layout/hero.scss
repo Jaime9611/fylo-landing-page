@@ -26,7 +26,7 @@
   &__title {
     margin-top: f.rem(15);
     font-family: var(--raleway);
-    font-size: f.rem(21);
+    font-size: f.rem(23);
     line-height: 1.4;
     @include m.hero_content_mobile();
     @include b.breakpoint(xlarge) {
