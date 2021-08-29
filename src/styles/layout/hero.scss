@@ -6,8 +6,8 @@
   text-align: center;
   &__img {
     margin-top: f.rem(20);
-    width: f.rem(320);
-    height: f.rem(252);
+    width: f.rem(302);
+    height: f.rem(238);
     margin-top: f.rem(22);
     background-image: url("../assets/images/illustration-intro.png");
     background-repeat: no-repeat;
@@ -36,8 +36,8 @@
     }
   }
   &__text {
-    margin-top: f.rem(20);
-    margin-bottom: f.rem(30);
+    margin-top: f.rem(17);
+    margin-bottom: f.rem(33);
     color: var(--white);
     @include m.hero_content_mobile();
     @include b.breakpoint(xlarge) {
