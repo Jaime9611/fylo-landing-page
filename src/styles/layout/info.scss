@@ -1,3 +1,18 @@
-.info {
-  margin-top: 60px;
+@use '../utils/functions' as f;
+
+.info-list {
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: f.rem(302);
+  gap: f.rem(70) 0;
+  justify-content: center;
+  text-align: center;
+  &__title {
+    font-family: var(--raleway);
+    font-size: f.rem(19);
+    margin-top: 30px;
+  }
+  &__text {
+    margin-top: 10px;
+  }
 }
