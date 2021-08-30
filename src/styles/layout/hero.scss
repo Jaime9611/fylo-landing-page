@@ -21,17 +21,18 @@
       @include b.breakpoint(xlarge) {
         height: 31vw;
         background-image: url("../assets/images/bg-curvy-desktop.svg");
+        background-size: contain;
       }
     }
     .bg-color {
       width: 100vw;
       background-color: var(--dark-blue-main-bg);
-      height: f.rem(210); // 380
+      height: f.rem(275); // 380
       @include b.breakpoint(mobile) {
-        height: 100px;
+        height: f.rem(100);
       }
       @include b.breakpoint(xmedium) {
-        height: 10px;
+        height: f.rem(10);
       }
       @include b.breakpoint(large) {
         height: 0;
@@ -81,11 +82,12 @@
     }
   }
   a {
+    margin-bottom: f.rem(60);
     @include b.breakpoint(large) {
-      margin-bottom: 140px;
+      margin-bottom: f.rem(150);
     }
     @include b.breakpoint(xlarge) {
-      margin-bottom: 170px;
+      margin-bottom: f.rem(160);
     }
   }
 }
