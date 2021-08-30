@@ -1,4 +1,5 @@
 @use '../utils/functions' as f;
+@use '../utils/breakpoints' as b;
 
 .info-list {
   margin: 60px 0;
@@ -7,6 +8,22 @@
   gap: f.rem(70) 0;
   justify-content: center;
   text-align: center;
+  @include b.breakpoint(medium) {
+    grid-template-columns: repeat(2, f.rem(302));
+    gap: f.rem(70) f.rem(50);
+  }
+  @include b.breakpoint(large) {
+    grid-template-columns: repeat(2, f.rem(302));
+    gap: f.rem(70) f.rem(150);
+  }
+  @include b.breakpoint(xlarge) {
+    margin-top: 0;
+  }
+  &__img {
+    @include b.breakpoint(large) {
+      height: 86px;
+    }
+  }
   &__title {
     font-family: var(--raleway);
     font-size: f.rem(19);
