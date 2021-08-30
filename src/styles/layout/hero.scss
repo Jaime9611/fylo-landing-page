@@ -3,9 +3,28 @@
 @use '../utils/mixins' as m;
 
 .hero {
+  width: 100%;
+  position: relative;
   text-align: center;
+  background-color: var(--dark-blue-su-bg);
+  z-index: 1;
+  &__bg-section {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    .bg-img {
+      width: f.rem(375);
+      height: f.rem(140);
+      background-image: url("../assets/images/bg-curvy-mobile.svg");
+      background-repeat: no-repeat;
+    }
+    .bg-color {
+      width: 100%;
+      height: f.rem(210);
+      background-color: var(--dark-blue-main-bg);
+    }
+  }
   &__img {
-    margin-top: f.rem(20);
     width: f.rem(302);
     height: f.rem(238);
     margin-top: f.rem(22);
@@ -30,7 +49,7 @@
     line-height: 1.4;
     @include m.hero_content_mobile();
     @include b.breakpoint(xlarge) {
-      margin-top: 47px;
+      margin-top: f.rem(47);
       width: f.rem(720);
       font-size: f.rem(42);
     }
@@ -41,8 +60,8 @@
     color: var(--white);
     @include m.hero_content_mobile();
     @include b.breakpoint(xlarge) {
-      margin-top: 45px;
-      margin-bottom: 36px;
+      margin-top: f.rem(45);
+      margin-bottom: f.rem(36);
       width: f.rem(585);
       font-size: f.rem(20);
     }

@@ -5,6 +5,7 @@
   height: f.rem(67);
   font-family: var(--raleway);
   color: var(--light-white);
+  background-color: var(--dark-blue-su-bg);
   @include b.breakpoint(xmedium) {
     height: f.rem(130);
   }
@@ -31,7 +32,7 @@
   }
   & ul li a:hover {
     color: var(--white);
-    // font-weight: 700;
+    font-weight: 700;
     text-decoration: underline;
   }
   & ul > li {
