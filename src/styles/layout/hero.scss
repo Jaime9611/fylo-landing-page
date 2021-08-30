@@ -50,7 +50,7 @@
       width: f.rem(620);
       height: f.rem(424);
     }
-    @include b.breakpoint(xlarge) {
+    @include b.breakpoint(large) {
       margin-top: 0;
       width: f.rem(720);
       height: f.rem(535);
@@ -62,7 +62,7 @@
     font-size: f.rem(23);
     line-height: 1.4;
     @include m.hero_content_mobile();
-    @include b.breakpoint(xlarge) {
+    @include b.breakpoint(large) {
       margin-top: f.rem(47);
       width: f.rem(720);
       font-size: f.rem(42);
@@ -73,7 +73,7 @@
     margin-bottom: f.rem(33);
     color: var(--white);
     @include m.hero_content_mobile();
-    @include b.breakpoint(xlarge) {
+    @include b.breakpoint(large) {
       margin-top: f.rem(45);
       margin-bottom: f.rem(36);
       width: f.rem(585);
@@ -82,6 +82,9 @@
   }
   a {
     @include b.breakpoint(large) {
+      margin-bottom: 140px;
+    }
+    @include b.breakpoint(xlarge) {
       margin-bottom: 170px;
     }
   }

@@ -8,6 +8,7 @@
   background-color: var(--dark-blue-su-bg);
   @include b.breakpoint(xmedium) {
     height: f.rem(130);
+    font-size: f.rem(16);
   }
   @include b.breakpoint(xlarge) {
     height: f.rem(200);

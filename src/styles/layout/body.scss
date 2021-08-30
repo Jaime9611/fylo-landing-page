@@ -4,7 +4,7 @@
 body {
   background-color: var(--dark-blue-main-bg);
   color: var(--white);
-  @include b.breakpoint(xlarge) {
+  @include b.breakpoint(large) {
     font-size: f.rem(20);
   }
 }
