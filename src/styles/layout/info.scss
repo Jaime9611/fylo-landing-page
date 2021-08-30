@@ -4,19 +4,20 @@
 .info-list {
   margin: 60px 0;
   display: grid;
-  grid-template-columns: f.rem(302);
+  grid-template-columns: f.rem(320);
   gap: f.rem(70) 0;
   justify-content: center;
   text-align: center;
   @include b.breakpoint(medium) {
-    grid-template-columns: repeat(2, f.rem(302));
+    grid-template-columns: repeat(2, f.rem(320));
     gap: f.rem(70) f.rem(50);
   }
   @include b.breakpoint(large) {
-    grid-template-columns: repeat(2, f.rem(302));
+    grid-template-columns: repeat(2, f.rem(361));
     gap: f.rem(70) f.rem(150);
   }
   @include b.breakpoint(xlarge) {
+    // grid-template-columns: repeat(2, f.rem(340));
     margin-top: 0;
   }
   &__img {
@@ -28,8 +29,14 @@
     font-family: var(--raleway);
     font-size: f.rem(19);
     margin-top: 30px;
+    @include b.breakpoint(large) {
+      font-size: f.rem(20);
+    }
   }
   &__text {
     margin-top: 10px;
+    @include b.breakpoint(large) {
+      font-size: 14px;
+    }
   }
 }
