@@ -1,7 +1,11 @@
 @use '../utils/functions' as f;
 @use '../utils/mixins' as m;
+@use '../utils/breakpoints' as b;
 
 .description {
+  @include b.breakpoint(large) {
+    flex-direction: row;
+  }
   &__img {
     margin-top: f.rem(60);
     width: 322px;
@@ -9,11 +13,20 @@
     background-image: url("../assets/images/illustration-stay-productive.png");
     background-repeat: no-repeat;
     background-size: contain;
+    @include b.breakpoint(large) {
+      width: 624px;
+      height: 330px;
+      margin-right: 150px;
+      margin-top: 0;
+    }
   }
   &__title {
     margin-top: f.rem(45);
-    text-align: center;
+    align-self: flex-start;
     @include m.section_title();
+    @include b.breakpoint(large) {
+      margin-top: 0;
+    }
   }
   &__text {
     margin-top: f.rem(20);
