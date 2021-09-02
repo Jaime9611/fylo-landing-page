@@ -2,8 +2,16 @@
 @use '../utils/mixins' as m;
 
 .description {
-  margin: 60px auto;
+  &__img {
+    margin-top: f.rem(60);
+    width: 322px;
+    height: 243px;
+    background-image: url("../assets/images/illustration-stay-productive.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   &__title {
+    margin-top: f.rem(45);
     text-align: center;
     @include m.section_title();
   }
