@@ -1,0 +1,35 @@
+@use '../utils/functions' as f;
+@use '../utils/mixins' as m;
+
+.description {
+  margin: 60px auto;
+  &__title {
+    text-align: center;
+    @include m.section_title();
+  }
+  &__text {
+    margin-top: f.rem(20);
+  }
+  &__more-info {
+    margin-top: f.rem(20);
+    align-self: flex-start;
+    color: var(--ca-gradient-cyan);
+    border-bottom: 1px solid var(--ca-gradient-cyan);
+    &:visited {
+      color: var(--ca-gradient-cyan);
+    }
+    &:hover {
+      color: var(--white);
+      border-color: var(--white);
+    }
+    .icon {
+      display: inline-block;
+      margin-left: f.rem(6);
+      width: 14px;
+      height: 14px;
+      background-image: url("../assets/images/icon-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

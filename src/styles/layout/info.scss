@@ -1,4 +1,5 @@
 @use '../utils/functions' as f;
+@use '../utils/mixins' as m;
 @use '../utils/breakpoints' as b;
 
 .info-list {
@@ -26,12 +27,8 @@
     }
   }
   &__title {
-    font-family: var(--raleway);
-    font-size: f.rem(19);
     margin-top: 30px;
-    @include b.breakpoint(large) {
-      font-size: f.rem(20);
-    }
+    @include m.section_title();
   }
   &__text {
     margin-top: 10px;

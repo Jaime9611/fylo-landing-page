@@ -4,3 +4,11 @@
 @mixin hero_content_mobile() {
   width: 302px;
 }
+
+@mixin section_title() {
+  font-family: var(--raleway);
+  font-size: f.rem(19);
+  @include b.breakpoint(large) {
+    font-size: f.rem(20);
+  }
+}
