@@ -21,15 +21,12 @@
     &:hover {
       color: var(--white);
       border-color: var(--white);
+      .icon__fill {
+        fill: white;
+      }
     }
     .icon {
-      display: inline-block;
       margin-left: f.rem(6);
-      width: 14px;
-      height: 14px;
-      background-image: url("../assets/images/icon-arrow.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
     }
   }
 }
