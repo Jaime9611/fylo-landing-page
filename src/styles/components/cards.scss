@@ -10,5 +10,11 @@
   padding: 28px;
   background-color: var(--dark-blue-testimonials-bg);
   border-radius: 5px;
-  font-size: 11px;
+  &__text {
+    font-size: 10px;
+    line-height: 2;
+  }
+  &__autor {
+    display: flex;
+  }
 }
