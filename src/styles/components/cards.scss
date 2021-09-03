@@ -23,6 +23,27 @@
     margin-bottom: 0;
     margin-right: 25px;
   }
+  &:first-of-type {
+    position: relative;
+  }
+  &:first-of-type::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    background-image: url("../assets/images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    @include b.breakpoint(medium) {
+      width: 40px;
+      height: 40px;
+      top: -36px;
+      left: 10px;
+    }
+  }
   &:last-of-type {
     margin-bottom: 0;
   }
