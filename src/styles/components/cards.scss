@@ -6,15 +6,15 @@
 
 .card {
   width: 278px;
-  height: 157px;
-  padding: 28px;
+  padding: 20px;
   background-color: var(--dark-blue-testimonials-bg);
   border-radius: 5px;
+  box-shadow: 10px 10px 6px -6px var(--dark-blue-su-bg);
   &__text {
     font-size: 10px;
     line-height: 2;
   }
   &__autor {
-    display: flex;
+    margin-top: 10px;
   }
 }

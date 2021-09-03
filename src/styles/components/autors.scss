@@ -1,0 +1,16 @@
+.autor {
+  &__profile-pic {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  &__name {
+    font-size: 11px;
+    font-weight: 700;
+  }
+  &__role {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
