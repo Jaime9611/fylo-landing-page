@@ -12,3 +12,10 @@
     font-size: f.rem(20);
   }
 }
+
+@mixin section_text() {
+  margin-top: 10px;
+  @include b.breakpoint(large) {
+    font-size: 14px;
+  }
+}

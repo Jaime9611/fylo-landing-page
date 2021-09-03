@@ -14,9 +14,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     @include b.breakpoint(large) {
-      width: 624px;
-      height: 330px;
-      margin-right: 150px;
+      width: 828px;
+      height: 400px;
+      margin-right: 45px;
       margin-top: 0;
     }
   }
@@ -30,12 +30,20 @@
   }
   &__text {
     margin-top: f.rem(20);
+    @include m.section_text();
   }
   &__more-info {
+    width: 45%;
+    height: f.rem(26);
     margin-top: f.rem(20);
     align-self: flex-start;
     color: var(--ca-gradient-cyan);
     border-bottom: 1px solid var(--ca-gradient-cyan);
+    @include m.section_text();
+    @include b.breakpoint(large) {
+      width: 25%;
+      height: 30px;
+    }
     &:visited {
       color: var(--ca-gradient-cyan);
     }

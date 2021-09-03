@@ -31,9 +31,6 @@
     @include m.section_title();
   }
   &__text {
-    margin-top: 10px;
-    @include b.breakpoint(large) {
-      font-size: 14px;
-    }
+    @include m.section_text();
   }
 }
