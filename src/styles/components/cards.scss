@@ -1,0 +1,14 @@
+.card-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 278px;
+  height: 157px;
+  padding: 28px;
+  background-color: var(--dark-blue-testimonials-bg);
+  border-radius: 5px;
+  font-size: 11px;
+}
