@@ -3,47 +3,58 @@
 @use '../utils/breakpoints' as b;
 
 .description {
-  @include b.breakpoint(large) {
+  margin-bottom: f.rem(60);
+  padding-top: 60px;
+  @include b.breakpoint(medium) {
     flex-direction: row;
   }
   &__img {
-    margin-top: f.rem(60);
     width: 322px;
     height: 243px;
     background-image: url("../assets/images/illustration-stay-productive.png");
     background-repeat: no-repeat;
     background-size: contain;
+    @include b.breakpoint(medium) {
+      width: 910px;
+      height: 265px;
+      margin-right: 35px;
+    }
     @include b.breakpoint(large) {
-      width: 828px;
-      height: 400px;
+      width: 930px;
+      height: 485px;
       margin-right: 45px;
-      margin-top: 0;
     }
   }
   &__title {
     margin-top: f.rem(45);
     align-self: flex-start;
-    @include m.section_title();
-    @include b.breakpoint(large) {
+    font-size: f.rem(19);
+    font-family: var(--raleway);
+    @include b.breakpoint(medium) {
+      width: 300px;
+      font-size: 25px;
       margin-top: 0;
+    }
+    @include b.breakpoint(large) {
+      width: 325px;
+      font-size: f.rem(39);
     }
   }
   &__text {
     margin-top: f.rem(20);
     @include m.section_text();
   }
+  &__text:first-of-type {
+    margin-top: 25px;
+  }
   &__more-info {
-    width: 45%;
+    width: 152px;
     height: f.rem(26);
     margin-top: f.rem(20);
     align-self: flex-start;
     color: var(--ca-gradient-cyan);
     border-bottom: 1px solid var(--ca-gradient-cyan);
     @include m.section_text();
-    @include b.breakpoint(large) {
-      width: 25%;
-      height: 30px;
-    }
     &:visited {
       color: var(--ca-gradient-cyan);
     }
