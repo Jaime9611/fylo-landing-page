@@ -51,3 +51,17 @@
     }
   }
 }
+
+@mixin footer-links($newSection: true) {
+  @if ($newSection) {
+    margin-top: 40px;
+  } @else {
+    margin-top: 20px;
+  }
+  a:not(:first-child) {
+    font-size: 12px;
+  }
+  a:hover {
+    color: var(--white);
+  }
+}

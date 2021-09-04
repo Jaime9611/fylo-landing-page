@@ -6,12 +6,16 @@
   padding: 60px 0;
   background-color: var(--dark-blue-footer-bg);
   font-size: f.rem(13);
+  color: var(--light-white);
   &__logo {
     align-self: flex-start;
     @include m.logo(footer);
   }
   &__info {
     margin-top: 35px;
+    @include b.breakpoint(xlarge) {
+      flex-direction: row;
+    }
   }
   &__location {
     width: 100%;
@@ -49,13 +53,10 @@
     }
   }
   &__about {
-    a:not(:first-child) {
-      font-size: 12px;
-    }
+    @include m.footer-links();
   }
   &__contact-us {
-    a:not(:first-child) {
-      font-size: 12px;
-    }
+    margin-top: 20px;
+    @include m.footer-links(false);
   }
 }
