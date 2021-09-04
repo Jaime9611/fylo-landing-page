@@ -5,6 +5,7 @@
 .footer {
   padding: 60px 0;
   background-color: var(--dark-blue-footer-bg);
+  font-size: f.rem(13);
   &__logo {
     align-self: flex-start;
     @include m.logo(footer);
@@ -20,7 +21,6 @@
     }
     p {
       margin-left: 20px;
-      font-size: 13px;
       width: 73%;
     }
   }
@@ -33,7 +33,6 @@
     }
     p {
       margin-left: 14px;
-      font-size: 13px;
       width: 73%;
     }
   }
@@ -46,8 +45,17 @@
     }
     p {
       margin-left: 12px;
-      font-size: 13px;
       width: 73%;
+    }
+  }
+  &__about {
+    a:not(:first-child) {
+      font-size: 12px;
+    }
+  }
+  &__contact-us {
+    a:not(:first-child) {
+      font-size: 12px;
     }
   }
 }
