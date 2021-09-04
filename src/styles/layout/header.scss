@@ -1,5 +1,6 @@
 @use '../utils/functions' as f;
 @use '../utils/breakpoints' as b;
+@use '../utils/mixins' as m;
 
 .header {
   height: f.rem(67);
@@ -14,22 +15,7 @@
     height: f.rem(200);
   }
   &__logo {
-    background-image: url("../assets/images/logo.svg");
-    width: f.rem(82.5);
-    height: f.rem(26.3);
-    background-repeat: no-repeat;
-    background-size: contain;
-    &:hover {
-      transform: scale(1.1);
-    }
-    @include b.breakpoint(xmedium) {
-      width: f.rem(168);
-      height: f.rem(40);
-    }
-    @include b.breakpoint(xlarge) {
-      width: f.rem(178);
-      height: f.rem(50);
-    }
+    @include m.logo(header);
   }
   & ul li a:hover {
     color: var(--white);
