@@ -1,0 +1,26 @@
+@use '../utils/functions' as f;
+@use '../utils/breakpoints' as b;
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--dark-blue-footer-bg);
+  &__logo {
+    background-image: url("../assets/images/logo.svg");
+    width: 178px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-start;
+    &:hover {
+      transform: scale(1.1);
+    }
+    @include b.breakpoint(xmedium) {
+      width: f.rem(168);
+      height: f.rem(40);
+    }
+    @include b.breakpoint(xlarge) {
+      width: 70px;
+      height: 23px;
+    }
+  }
+}
