@@ -7,6 +7,8 @@
   top: 0;
   left: calc(50%);
   transform: translateY(-50%) translateX(-50%);
+  box-shadow: 10px 10px 10px -10px #00000082;
+
   &__container {
     width: 337px;
     padding: 40px 30px;
