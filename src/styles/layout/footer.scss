@@ -71,6 +71,10 @@
     @include m.footer-links(false);
   }
   &__social {
+    margin-top: 20px;
     align-items: start;
+    @include b.breakpoint(medium) {
+      margin-top: 0;
+    }
   }
 }
