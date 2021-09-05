@@ -1,3 +1,7 @@
+@use '../utils/functions' as f;
+@use '../utils/mixins' as m;
+@use '../utils/breakpoints' as b;
+
 .form {
   position: absolute;
   top: 0;
@@ -8,5 +12,13 @@
     padding: 40px 30px;
     background-color: var(--dark-blue-su-bg);
     border-radius: 10px;
+  }
+  &__title {
+    color: var(--white);
+    @include m.section-title();
+  }
+  &__text {
+    margin-top: 20px;
+    text-align: center;
   }
 }
