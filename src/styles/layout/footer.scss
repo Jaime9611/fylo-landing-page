@@ -13,12 +13,20 @@
   }
   &__info {
     margin-top: 35px;
-    @include b.breakpoint(xlarge) {
+    @include b.breakpoint(medium) {
+      width: 100%;
       flex-direction: row;
+      justify-content: space-between;
     }
   }
   &__location {
     width: 100%;
+    @include b.breakpoint(medium) {
+      width: 20%;
+    }
+    @include b.breakpoint(large) {
+      width: 30%;
+    }
     svg {
       margin-top: 4px;
       width: 13px;
@@ -31,6 +39,9 @@
   &__phone {
     width: 100%;
     margin-top: 15px;
+    @include b.breakpoint(medium) {
+      margin-top: 0;
+    }
     svg {
       margin-top: 2px;
       width: 18px;
@@ -58,5 +69,8 @@
   &__contact-us {
     margin-top: 20px;
     @include m.footer-links(false);
+  }
+  &__social {
+    align-items: start;
   }
 }
