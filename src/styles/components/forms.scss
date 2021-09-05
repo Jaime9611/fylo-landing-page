@@ -1,0 +1,12 @@
+.form {
+  position: absolute;
+  top: 0;
+  left: calc(50%);
+  transform: translateY(-50%) translateX(-50%);
+  &__container {
+    width: 337px;
+    padding: 40px 30px;
+    background-color: var(--dark-blue-su-bg);
+    border-radius: 10px;
+  }
+}
