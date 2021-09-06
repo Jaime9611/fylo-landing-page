@@ -31,6 +31,7 @@
   }
   &__get-started {
     width: 100%;
+    position: relative;
     @include b.breakpoint(medium) {
       flex-direction: row;
     }
@@ -68,9 +69,18 @@
 
 .error {
   width: 100%;
+  position: absolute;
+  top: 68px;
+  left: 29px;
   padding: 0;
   color: var(--error-light-red);
-  &:active {
+  &.active {
     padding: f.rem(0.3);
+  }
+  @include b.breakpoint(medium) {
+    top: 74px;
+  }
+  @include b.breakpoint(large) {
+    top: 78px;
   }
 }
