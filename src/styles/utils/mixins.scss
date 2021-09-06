@@ -19,3 +19,52 @@
     font-size: 14px;
   }
 }
+
+@mixin logo($section) {
+  background-image: url("../assets/images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @if ($section == header) {
+    width: f.rem(82.5);
+    height: f.rem(26.3);
+    @include b.breakpoint(xmedium) {
+      width: f.rem(168);
+      height: f.rem(40);
+    }
+    @include b.breakpoint(xlarge) {
+      width: f.rem(178);
+      height: f.rem(50);
+    }
+  } @else if ($section == footer) {
+    width: 178px;
+    height: 50px;
+    @include b.breakpoint(xmedium) {
+      width: f.rem(168);
+      height: f.rem(40);
+    }
+    @include b.breakpoint(xlarge) {
+      width: 70px;
+      height: 23px;
+    }
+  }
+}
+
+@mixin footer-links($newSection: true) {
+  @if ($newSection) {
+    margin-top: 40px;
+  } @else {
+    margin-top: 20px;
+  }
+  a:not(:first-child) {
+    font-size: 12px;
+  }
+  a:hover {
+    color: var(--white);
+  }
+  @include b.breakpoint(medium) {
+    margin-top: 0;
+  }
+}
