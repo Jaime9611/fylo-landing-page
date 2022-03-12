@@ -7,7 +7,7 @@ This is a solution to the [Fylo dark theme landing page](https://www.frontendmen
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Link](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -36,8 +36,8 @@ Users should be able to:
 
   ![Mobile Preview](./screenshots/MobileView.png)
 
-### Links
-- Live Site URL: [Live Site](https://jaime9611.github.io/ArticleComponent/)
+### Link
+- Live Site URL: [Live Site](https://jaime9611.github.io/fylo-landing-page/)
 
 ## My process
 
