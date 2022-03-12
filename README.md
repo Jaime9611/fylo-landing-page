@@ -6,8 +6,8 @@ This is a solution to the [Fylo dark theme landing page](https://www.frontendmen
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Link](#links)
+  - [Screenshots](#screenshots)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -26,7 +26,7 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page.
 
-### Screenshot
+### Screenshots
 
 - Desktop Preview:
 
@@ -35,6 +35,7 @@ Users should be able to:
 - Mobile Preview:
 
   ![Mobile Preview](./screenshots/MobileView.png)
+  
 
 ### Link
 - Live Site URL: [Live Site](https://jaime9611.github.io/fylo-landing-page/)
