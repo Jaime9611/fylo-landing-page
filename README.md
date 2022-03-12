@@ -37,13 +37,11 @@ Users should be able to:
   ![Mobile Preview](./screenshots/MobileView.png)
 
 ### Links
-
-- Solution URL: [Mobile First Solution - Sass](https://www.frontendmentor.io/solutions/mobile-first-solution-using-sass-_144e8Jae)
 - Live Site URL: [Live Site](https://jaime9611.github.io/ArticleComponent/)
 
 ## My process
 
-In building this project, I used Webpack to bundle all my files and to compress the images, so that the final "dist" folder will be ready for production. I also configure Webpack to compile the .scss files used for styling the page.
+In building this project, I used Webpack to bundle all my files and to compress the images, so that the final "dist" folder will be ready for production. I also configured Webpack to compile the .scss files used for styling the page.
 
 ### Built with
 
