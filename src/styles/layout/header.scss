@@ -1,12 +1,13 @@
-@use '../utils/functions' as f;
-@use '../utils/breakpoints' as b;
-@use '../utils/mixins' as m;
+@use "../utils/functions" as f;
+@use "../utils/breakpoints" as b;
+@use "../utils/mixins" as m;
 
 .header {
   height: f.rem(67);
   font-family: var(--raleway);
   color: var(--light-white);
   background-color: var(--dark-blue-su-bg);
+  font-weight: 700;
   @include b.breakpoint(xmedium) {
     height: f.rem(130);
     font-size: f.rem(16);
@@ -19,7 +20,6 @@
   }
   & ul li a:hover {
     color: var(--white);
-    font-weight: 700;
     text-decoration: underline;
   }
   & ul > li {
